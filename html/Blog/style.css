@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #d35400;
+}
+
+ul, li, a {
+    list-style: none;
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #e67e22;
+    color: #2c3e50;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    text-align: le;
+}
+
+nav img {
+    height: auto;
+    margin-top: 70px;
+}
+
+nav h2 {
+    color: yellowgreen; /* Cor dos subtítulos */
+    border-bottom: 2px solid yellowgreen; /* Linha embaixo dos subtítulos */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
