@@ -9,16 +9,23 @@
 
 <body>
     <?php
-    
-
-
-
+    $valor = $_POST['valor'] ?? '';
+    function calc($valor)
+    {
+        $total = ($valor * 1.81);
+        echo "<h3>$total</h3>";
+        return $total;
+    }
     ?>
-    <form action="moeda.php">
-        <h1>De dolar para real</h1>
-        <h2>Cotação do dolar: R$1.81</h2>
-        <input type="number" placeholder="Insira o valor em R$"><br><br>
+    <form action="index.php" method=post>
+        <h1>Conversão de Dolar para Real</h1>
+        <h2>Cotação do Dolar: R$1.81</h2>
+        <input type="text" placeholder="Insira o valor em R$" name="valor"><br><br>
         <input type="submit" value="Converter">
+
+        <?php
+        calc($valor);
+        ?>
     </form>
 
 </body>

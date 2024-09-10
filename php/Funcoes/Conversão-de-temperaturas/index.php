@@ -13,13 +13,13 @@
     function calc($valor)
     {
         $total = ($valor - 32) * 5 / 9;
+        round($total, 2);
         echo "<h3>$total</h3>";
-
         return $total;
     }
     ?>
-    <form action="index.php" method="post" name="">
-        <h2>Conversão</h2>
+    <form action="index.php" method="post">
+        <h1>Conversão de Fahrenheit para Celsius</h1>
         <input type="number" placeholder="Insira um número" name="valor"><br><br>
         <input type="submit" value="Calcular">
         <?php
